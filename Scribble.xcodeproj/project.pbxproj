@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		96129C1A22FB1E4600BBC4A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96129C1922FB1E4600BBC4A2 /* AppDelegate.swift */; };
-		96129C1C22FB1E4600BBC4A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96129C1B22FB1E4600BBC4A2 /* ViewController.swift */; };
 		96129C1F22FB1E4600BBC4A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96129C1D22FB1E4600BBC4A2 /* Main.storyboard */; };
 		96129C2222FB1E4600BBC4A2 /* Scribble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96129C2022FB1E4600BBC4A2 /* Scribble.xcdatamodeld */; };
 		96129C2422FB1E4800BBC4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96129C2322FB1E4800BBC4A2 /* Assets.xcassets */; };
 		96129C2722FB1E4800BBC4A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96129C2522FB1E4800BBC4A2 /* LaunchScreen.storyboard */; };
+		96129C2F22FB1F9700BBC4A2 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96129C2E22FB1F9700BBC4A2 /* NotesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96129C1622FB1E4600BBC4A2 /* Scribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96129C1922FB1E4600BBC4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96129C1B22FB1E4600BBC4A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96129C1E22FB1E4600BBC4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96129C2122FB1E4600BBC4A2 /* Scribble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scribble.xcdatamodel; sourceTree = "<group>"; };
 		96129C2322FB1E4800BBC4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96129C2622FB1E4800BBC4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96129C2822FB1E4800BBC4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96129C2E22FB1F9700BBC4A2 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				96129C1922FB1E4600BBC4A2 /* AppDelegate.swift */,
-				96129C1B22FB1E4600BBC4A2 /* ViewController.swift */,
-				96129C1D22FB1E4600BBC4A2 /* Main.storyboard */,
-				96129C2322FB1E4800BBC4A2 /* Assets.xcassets */,
-				96129C2522FB1E4800BBC4A2 /* LaunchScreen.storyboard */,
+				96129C3122FB1FB300BBC4A2 /* Data Model */,
+				96129C3222FB1FBF00BBC4A2 /* Views */,
+				96129C3022FB1FA600BBC4A2 /* Controllers */,
+				96129C3322FB1FE100BBC4A2 /* Supporting Files */,
 				96129C2822FB1E4800BBC4A2 /* Info.plist */,
-				96129C2022FB1E4600BBC4A2 /* Scribble.xcdatamodeld */,
 			);
 			path = Scribble;
+			sourceTree = "<group>";
+		};
+		96129C3022FB1FA600BBC4A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96129C2E22FB1F9700BBC4A2 /* NotesListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		96129C3122FB1FB300BBC4A2 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				96129C2022FB1E4600BBC4A2 /* Scribble.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		96129C3222FB1FBF00BBC4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96129C1D22FB1E4600BBC4A2 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96129C3322FB1FE100BBC4A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96129C2522FB1E4800BBC4A2 /* LaunchScreen.storyboard */,
+				96129C2322FB1E4800BBC4A2 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96129C1C22FB1E4600BBC4A2 /* ViewController.swift in Sources */,
 				96129C2222FB1E4600BBC4A2 /* Scribble.xcdatamodeld in Sources */,
+				96129C2F22FB1F9700BBC4A2 /* NotesListViewController.swift in Sources */,
 				96129C1A22FB1E4600BBC4A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NBL2DFM5E9;
 				INFOPLIST_FILE = Scribble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NBL2DFM5E9;
 				INFOPLIST_FILE = Scribble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
