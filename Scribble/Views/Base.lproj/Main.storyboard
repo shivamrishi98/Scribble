@@ -34,6 +34,9 @@
                     <navigationItem key="navigationItem" title="Scribble" id="Img-Ec-b9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bxm-th-jKv">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="MkB-ZA-2NJ" id="uo7-Ut-Gcu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
